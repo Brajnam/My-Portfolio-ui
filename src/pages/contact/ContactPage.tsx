@@ -1,7 +1,13 @@
 import React from 'react'
-
-export default function ContactPage() {
+import PageLayout from '../../components/layouts/PageLayout'
+const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+    <div>
+    <PageLayout>
+      <div> HomePage</div>
+    </PageLayout>
+    </div>
   )
 }
+
+export default ContactPage

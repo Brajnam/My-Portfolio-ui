@@ -1,16 +1,16 @@
 
 import React from 'react'
 import PageLayout from '../../components/layouts/PageLayout'
-import ProjectContainer from '../../container/projects/ProjectContainer'
+import LoginContainer from '../../container/login/LoginContainer'
 
-const ProjectPage = () => {
+const LoginPage = () => {
   return (
     <>
     <PageLayout>
-        <ProjectContainer />
+        <LoginContainer />
     </PageLayout>
     </>
   )
 }
 
-export default ProjectPage
+export default LoginPage
