@@ -1,3 +1,4 @@
+
 import React, { useContext } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { routeMap } from '../utils/constants'
@@ -9,29 +10,22 @@ const AppRoutes = () => {
 
   return (
    <>
-   <Routes>
-   {routeMap.map((route) => {
-        const Element = route.element;
-        if (route.isProtected) {
-          return (
-            <Route
-              key={route.__id}
-              path={route.URL}
-              element={
-                authToken ? <Element /> : <Navigate to="/login" replace />
-              }
-            />
-          );
-        } else {
-          return (
-            <>
-              <Route path={route.URL} element={<Element />} />
-              <Route path='*' element={<Element/>} />
-            </>
-          );
-        }
-      })}
-   </Routes>
+ <Routes>
+            {routeMap.map((route) => {
+                const Element = route.element;
+                if (route.isProtected) {
+                    return (
+                        <Route
+                            key={route.__id}
+                            path={route.URL}
+                            element={authToken ? <Element /> : <Navigate to="/login" replace />}
+                        />
+                    );
+                } else {
+                    return <Route key={route.__id} path={route.URL} element={<Element />} />;
+                }
+            })}
+        </Routes>
    </>
   )
 }

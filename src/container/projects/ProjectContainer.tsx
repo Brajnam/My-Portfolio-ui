@@ -22,7 +22,7 @@ const ProjectsContainer: React.FC = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('https://dummyjson.com/products');
+        const response = await axios.get('http://127.0.0.1:8000/api/questions');
         const data = response.data.products.map((product: any) => ({
           id: product.id,
           title: product.title,

@@ -1,13 +1,15 @@
 import React from 'react'
 import PageLayout from '../../components/layouts/PageLayout'
-const ContactPage = () => {
+import DetailboardContainer from '../../container/detailboard/DetailBoardContainer'
+
+const DetailBoard = () => {
   return (
-    <div>
+    <>
     <PageLayout>
-      <div> HomePage</div>
+        <DetailboardContainer />
     </PageLayout>
-    </div>
+    </>
   )
 }
 
-export default ContactPage
+export default DetailBoard

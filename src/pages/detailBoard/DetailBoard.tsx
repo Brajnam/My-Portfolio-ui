@@ -1,13 +1,13 @@
 
 import React from 'react'
 import PageLayout from '../../components/layouts/PageLayout'
-import DetailboardContainer from '../../container/detailboard/DetailboardContainer'
+import DetailboardContainer from '../../container/detailboard/DetailBoardContainer'
 
 const DetailBoard = () => {
   return (
     <>
     <PageLayout>
-        <DetailboardContainer />
+        < DetailboardContainer/>
     </PageLayout>
     </>
   )

@@ -1,7 +1,15 @@
 import React from 'react'
+import PageLayout from '../../components/layouts/PageLayout'
+import HomeContainer from '../../container/home/HomeContainer'
 
-export default function HomePage() {
+const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+        <PageLayout>
+           <HomeContainer />
+        </PageLayout>
+    </div>
   )
 }
+
+export default HomePage
